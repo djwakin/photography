@@ -287,7 +287,7 @@
     background-size: cover;
     background-position: center;
     transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.4s;
-    filter: brightness(0.85) saturate(1);
+    filter: brightness(1) saturate(1);
   }
 
   .cat-tile:hover .cat-tile-bg {
@@ -349,16 +349,16 @@
   .cat-tile:hover .cat-tile-arrow { opacity: 1; transform: translateY(0); }
 
   /* category bg images */
-  .cat-tile[data-cat="still-lifes"]     .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_49fb58fe868e49d09f03778a3e0de07c~mv2.jpg/v1/fill/w_800,h_600,q_85/1edfc2_49fb58fe868e49d09f03778a3e0de07c~mv2.jpg'); }
-  .cat-tile[data-cat="cityscapes"]       .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_2dd739dc039f4c5d8516d3e4cff1f0be~mv2.jpeg/v1/fill/w_800,h_533,q_85/1edfc2_2dd739dc039f4c5d8516d3e4cff1f0be~mv2.jpeg'); }
-  .cat-tile[data-cat="nature"]           .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_8344105de43f495489c211ee361cdc44~mv2.jpg/v1/fill/w_800,h_533,q_85/1edfc2_8344105de43f495489c211ee361cdc44~mv2.jpg'); }
-  .cat-tile[data-cat="portraits"]        .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_22988ead2e2940b09c926809db0f3374~mv2.jpg/v1/fill/w_600,h_900,q_85/1edfc2_22988ead2e2940b09c926809db0f3374~mv2.jpg'); }
-  .cat-tile[data-cat="city-life"]        .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_5faceba513e148379d799bb52a2f370e~mv2.jpg/v1/fill/w_800,h_480,q_85/1edfc2_5faceba513e148379d799bb52a2f370e~mv2.jpg'); }
-  .cat-tile[data-cat="landscapes"]       .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_7200b2ca393e4c98a51af8f3b9d734fe~mv2.jpg/v1/fill/w_800,h_533,q_85/1edfc2_7200b2ca393e4c98a51af8f3b9d734fe~mv2.jpg'); }
-  .cat-tile[data-cat="facade-people"]    .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_b58083e32ca344909fff3fadd1d82011~mv2.png/v1/fill/w_600,h_800,q_85/1edfc2_b58083e32ca344909fff3fadd1d82011~mv2.png'); }
-  .cat-tile[data-cat="urban-wildlife"]   .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_6ebcb0fffb5a4537b78f0c9b3e47993f~mv2.jpeg/v1/fill/w_800,h_530,q_85/1edfc2_6ebcb0fffb5a4537b78f0c9b3e47993f~mv2.jpeg'); }
-  .cat-tile[data-cat="sports"]           .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_caa1086cbf86470b9706fa446aa4e669~mv2.jpg/v1/fill/w_600,h_900,q_85/1edfc2_caa1086cbf86470b9706fa446aa4e669~mv2.jpg'); }
-  .cat-tile[data-cat="clyde"]            .cat-tile-bg { background-image: url('https://static.wixstatic.com/media/1edfc2_ceb385c401bc4aefa12fc80ce33d2037~mv2.jpeg/v1/fill/w_800,h_533,q_85/1edfc2_ceb385c401bc4aefa12fc80ce33d2037~mv2.jpeg'); }
+  .cat-tile[data-cat="still-lifes"]     .cat-tile-bg { background-image: url('Still Lifes1.jpeg'); }
+  .cat-tile[data-cat="cityscapes"]       .cat-tile-bg { background-image: url('Cityscapes1.jpeg'); }
+  .cat-tile[data-cat="nature"]           .cat-tile-bg { background-image: url('Cityscapes3.jpeg'); }
+  .cat-tile[data-cat="portraits"]        .cat-tile-bg { background-image: url('Portraits1.jpg'); }
+  .cat-tile[data-cat="city-life"]        .cat-tile-bg { background-image: url('City Life1.jpeg'); }
+  .cat-tile[data-cat="landscapes"]       .cat-tile-bg { background-image: url('Landscapes1.jpg'); }
+  .cat-tile[data-cat="facade-people"]    .cat-tile-bg { background-image: url('Cityscapes8.jpg'); }
+  .cat-tile[data-cat="urban-wildlife"]   .cat-tile-bg { background-image: url('Cityscapes9.jpg'); }
+  .cat-tile[data-cat="sports"]           .cat-tile-bg { background-image: url('Sports1.jpg'); }
+  .cat-tile[data-cat="clyde"]            .cat-tile-bg { background-image: url('Clyde1.jpeg'); }
 
   /* ── CATEGORY PAGE ── */
   .cat-page-header {
@@ -699,14 +699,6 @@
         </div>
         <div class="cat-tile-arrow">→</div>
       </div>
-      <div class="cat-tile" data-cat="nature" onclick="showCategory('nature')">
-        <div class="cat-tile-bg"></div>
-        <div class="cat-tile-info">
-          <div class="cat-tile-name">Nature</div>
-          <div class="cat-tile-hint">View series</div>
-        </div>
-        <div class="cat-tile-arrow">→</div>
-      </div>
       <div class="cat-tile" data-cat="portraits" onclick="showCategory('portraits')">
         <div class="cat-tile-bg"></div>
         <div class="cat-tile-info">
@@ -727,22 +719,6 @@
         <div class="cat-tile-bg"></div>
         <div class="cat-tile-info">
           <div class="cat-tile-name">Landscapes</div>
-          <div class="cat-tile-hint">View series</div>
-        </div>
-        <div class="cat-tile-arrow">→</div>
-      </div>
-      <div class="cat-tile" data-cat="facade-people" onclick="showCategory('facade-people')">
-        <div class="cat-tile-bg"></div>
-        <div class="cat-tile-info">
-          <div class="cat-tile-name">Facade People</div>
-          <div class="cat-tile-hint">View series</div>
-        </div>
-        <div class="cat-tile-arrow">→</div>
-      </div>
-      <div class="cat-tile" data-cat="urban-wildlife" onclick="showCategory('urban-wildlife')">
-        <div class="cat-tile-bg"></div>
-        <div class="cat-tile-info">
-          <div class="cat-tile-name">Urban Wildlife</div>
           <div class="cat-tile-hint">View series</div>
         </div>
         <div class="cat-tile-arrow">→</div>
@@ -803,12 +779,9 @@
     <button class="filter-pill active" data-filter="all" onclick="filterPhotos('all', this)">All</button>
     <button class="filter-pill" data-filter="still-lifes" onclick="filterPhotos('still-lifes', this)">Still Lifes</button>
     <button class="filter-pill" data-filter="cityscapes" onclick="filterPhotos('cityscapes', this)">Cityscapes</button>
-    <button class="filter-pill" data-filter="nature" onclick="filterPhotos('nature', this)">Nature</button>
     <button class="filter-pill" data-filter="portraits" onclick="filterPhotos('portraits', this)">Portraits</button>
     <button class="filter-pill" data-filter="city-life" onclick="filterPhotos('city-life', this)">City Life</button>
     <button class="filter-pill" data-filter="landscapes" onclick="filterPhotos('landscapes', this)">Landscapes</button>
-    <button class="filter-pill" data-filter="facade-people" onclick="filterPhotos('facade-people', this)">Facade People</button>
-    <button class="filter-pill" data-filter="urban-wildlife" onclick="filterPhotos('urban-wildlife', this)">Urban Wildlife</button>
     <button class="filter-pill" data-filter="sports" onclick="filterPhotos('sports', this)">Sports</button>
     <button class="filter-pill" data-filter="clyde" onclick="filterPhotos('clyde', this)">Clyde</button>
   </div>
@@ -841,34 +814,70 @@
 // ═══════════════════════════════════════════════════════
 const PHOTOS = {
   "still-lifes": [
-    { src: "https://static.wixstatic.com/media/1edfc2_49fb58fe868e49d09f03778a3e0de07c~mv2.jpg/v1/fill/w_1200,h_1000,q_90/1edfc2_49fb58fe868e49d09f03778a3e0de07c~mv2.jpg", alt: "Still Life" },
+    { src: "Still Lifes1.jpeg", alt: "Still Life 1" },
+    { src: "Still Lifes2.jpg",  alt: "Still Life 2" },
+    { src: "Still Lifes3.jpeg", alt: "Still Life 3" },
+    { src: "Still Lifes4.jpeg", alt: "Still Life 4" },
+    { src: "Still Lifes5.jpeg", alt: "Still Life 5" },
+    { src: "Still Lifes6.jpeg", alt: "Still Life 6" },
+    { src: "Still Lifes7.jpg",  alt: "Still Life 7" },
   ],
   "cityscapes": [
-    { src: "https://static.wixstatic.com/media/1edfc2_2dd739dc039f4c5d8516d3e4cff1f0be~mv2.jpeg/v1/fill/w_1200,h_800,q_90/1edfc2_2dd739dc039f4c5d8516d3e4cff1f0be~mv2.jpeg", alt: "Cityscape" },
-  ],
-  "nature": [
-    { src: "https://static.wixstatic.com/media/1edfc2_8344105de43f495489c211ee361cdc44~mv2.jpg/v1/fill/w_1200,h_800,q_90/1edfc2_8344105de43f495489c211ee361cdc44~mv2.jpg", alt: "Nature" },
+    { src: "Cityscapes1.jpeg",  alt: "Cityscape 1" },
+    { src: "Cityscapes2.jpeg",  alt: "Cityscape 2" },
+    { src: "Cityscapes3.jpeg",  alt: "Cityscape 3" },
+    { src: "Cityscapes5.jpeg",  alt: "Cityscape 5" },
+    { src: "Cityscapes6.jpeg",  alt: "Cityscape 6" },
+    { src: "Cityscapes7.jpeg",  alt: "Cityscape 7" },
+    { src: "Cityscapes8.jpg",   alt: "Cityscape 8" },
+    { src: "Cityscapes9.jpg",   alt: "Cityscape 9" },
+    { src: "Cityscapes10.jpg",  alt: "Cityscape 10" },
+    { src: "Cityscapes11.jpg",  alt: "Cityscape 11" },
+    { src: "Cityscapes12.jpg",  alt: "Cityscape 12" },
+    { src: "Cityscapes13.jpg",  alt: "Cityscape 13" },
+    { src: "Cityscapes14.jpeg", alt: "Cityscape 14" },
+    { src: "Cityscapes15.jpg",  alt: "Cityscape 15" },
   ],
   "portraits": [
-    { src: "https://static.wixstatic.com/media/1edfc2_22988ead2e2940b09c926809db0f3374~mv2.jpg/v1/fill/w_900,h_1100,q_90/1edfc2_22988ead2e2940b09c926809db0f3374~mv2.jpg", alt: "Portrait" },
+    { src: "Portraits1.jpg",   alt: "Portrait 1" },
+    { src: "Portraits2.jpeg",  alt: "Portrait 2" },
+    { src: "Portraits3.jpeg",  alt: "Portrait 3" },
+    { src: "Portraits4.jpg",   alt: "Portrait 4" },
+    { src: "Portraits5.jpg",   alt: "Portrait 5" },
+    { src: "Portraits6.jpg",   alt: "Portrait 6" },
+    { src: "Portraits7.jpeg",  alt: "Portrait 7" },
+    { src: "Portraits8.jpg",   alt: "Portrait 8" },
   ],
   "city-life": [
-    { src: "https://static.wixstatic.com/media/1edfc2_5faceba513e148379d799bb52a2f370e~mv2.jpg/v1/fill/w_1200,h_700,q_90/1edfc2_5faceba513e148379d799bb52a2f370e~mv2.jpg", alt: "City Life" },
+    { src: "City Life1.jpeg", alt: "City Life 1" },
+    { src: "City Life2.jpeg", alt: "City Life 2" },
+    { src: "City Life3.jpeg", alt: "City Life 3" },
+    { src: "City Life4.jpeg", alt: "City Life 4" },
+    { src: "City Life5.jpg",  alt: "City Life 5" },
   ],
   "landscapes": [
-    { src: "https://static.wixstatic.com/media/1edfc2_7200b2ca393e4c98a51af8f3b9d734fe~mv2.jpg/v1/fill/w_1200,h_800,q_90/1edfc2_7200b2ca393e4c98a51af8f3b9d734fe~mv2.jpg", alt: "Landscape" },
-  ],
-  "facade-people": [
-    { src: "https://static.wixstatic.com/media/1edfc2_b58083e32ca344909fff3fadd1d82011~mv2.png/v1/fill/w_900,h_1100,q_90/1edfc2_b58083e32ca344909fff3fadd1d82011~mv2.png", alt: "Facade People" },
-  ],
-  "urban-wildlife": [
-    { src: "https://static.wixstatic.com/media/1edfc2_6ebcb0fffb5a4537b78f0c9b3e47993f~mv2.jpeg/v1/fill/w_1200,h_790,q_90/1edfc2_6ebcb0fffb5a4537b78f0c9b3e47993f~mv2.jpeg", alt: "Urban Wildlife" },
+    { src: "Landscapes1.jpg", alt: "Landscape 1" },
   ],
   "sports": [
-    { src: "https://static.wixstatic.com/media/1edfc2_caa1086cbf86470b9706fa446aa4e669~mv2.jpg/v1/fill/w_900,h_1400,q_90/1edfc2_caa1086cbf86470b9706fa446aa4e669~mv2.jpg", alt: "Sports" },
+    { src: "Sports1.jpg",  alt: "Sports 1" },
+    { src: "Sports2.jpg",  alt: "Sports 2" },
+    { src: "Sports3.jpg",  alt: "Sports 3" },
+    { src: "Sports4.jpg",  alt: "Sports 4" },
+    { src: "Sports5.jpg",  alt: "Sports 5" },
+    { src: "Sports6.jpg",  alt: "Sports 6" },
+    { src: "Sports7.JPG",  alt: "Sports 7" },
+    { src: "Sports8.jpg",  alt: "Sports 8" },
+    { src: "Sports9.jpg",  alt: "Sports 9" },
+    { src: "Sports10.jpg", alt: "Sports 10" },
+    { src: "Sports11.jpg", alt: "Sports 11" },
+    { src: "Sports12.jpg", alt: "Sports 12" },
+    { src: "Sports13.jpg", alt: "Sports 13" },
   ],
   "clyde": [
-    { src: "https://static.wixstatic.com/media/1edfc2_ceb385c401bc4aefa12fc80ce33d2037~mv2.jpeg/v1/fill/w_1200,h_800,q_90/1edfc2_ceb385c401bc4aefa12fc80ce33d2037~mv2.jpeg", alt: "Clyde" },
+    { src: "Clyde1.jpeg", alt: "Clyde 1" },
+    { src: "Clyde2.jpeg", alt: "Clyde 2" },
+    { src: "Clyde3.jpeg", alt: "Clyde 3" },
+    { src: "Clyde4.jpg",  alt: "Clyde 4" },
   ],
 };
 
