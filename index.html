@@ -50,7 +50,7 @@
 
   .nav-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.06em;
     color: var(--black);
@@ -66,7 +66,7 @@
   }
 
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
   }
 
   .nav-links a:hover,
@@ -149,6 +149,12 @@
     animation: fadeUp 1s 0.12s ease both;
   }
 
+  .hero-name span:first-child {
+    display: block;
+    font-style: italic;
+    color: var(--black);
+  }
+
   .hero-name span {
     display: block;
     font-style: italic;
@@ -176,13 +182,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--black);
-    cursor: pointer;
-    padding: 0.8rem 1.8rem;
-    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 1rem;
     transition: all 0.3s;
     animation: fadeUp 1s 0.48s ease both;
     background: none;
@@ -234,7 +234,7 @@
   }
 
   .eyebrow-label {
-    font-size: 0.62rem;
+    font-size: 1rem;
     letter-spacing: 0.35em;
     text-transform: uppercase;
     color: var(--gold);
@@ -243,7 +243,7 @@
 
   .eyebrow-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 300;
     color: var(--black);
   }
@@ -658,7 +658,7 @@
   <section class="hero">
     <div class="hero-inner">
       <p class="hero-tag">Photography Portfolio</p>
-      <h1 class="hero-name">Dan's<span>Photographs</span></h1>
+      <h1 class="hero-name"><span>Dan's</span><span>Photographs</span></h1>
       <div class="hero-divider"></div>
       <p class="hero-sub">New York City &amp; Beyond</p>
       <button class="hero-cta" onclick="scrollToGrid()">Browse the Work &nbsp;↓</button>
