@@ -417,7 +417,15 @@
     filter: brightness(0.7);
   }
 
-  .photo-item-overlay {
+  .photo-caption {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--mid);
+    padding: 0.5rem 0.2rem 0.2rem;
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
     position: absolute;
     inset: 0;
     display: flex;
@@ -860,8 +868,8 @@ const PHOTOS = {
     { src: "City Life7.jpg",  alt: "City Life 7" },
   ],
   "landscapes": [
-    { src: "Landscapes1.jpg", alt: "Landscape 1" },
-    { src: "Landscapes2.jpg", alt: "Landscape 2" },
+    { src: "Landscapes1.jpg", alt: "Landscape 1", caption: "Lake Champlain" },
+    { src: "Landscapes2.jpg", alt: "Landscape 2", caption: "Aix-en-Provence" },
   ],
   "sports": [
     { src: "Sports1.jpg",  alt: "Sports 1" },
@@ -947,6 +955,12 @@ function buildGrid(container, photos) {
       <img src="${photo.src}" alt="${photo.alt}" loading="lazy">
       <div class="photo-item-overlay"><div class="zoom-icon">⊕</div></div>
     `;
+    if (photo.caption) {
+      const cap = document.createElement('div');
+      cap.className = 'photo-caption';
+      cap.textContent = photo.caption;
+      item.appendChild(cap);
+    }
     item.addEventListener('click', () => openLightbox(photos, i));
     container.appendChild(item);
   });
