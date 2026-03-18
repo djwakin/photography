@@ -570,7 +570,18 @@
   .lb-next { right: 1.5rem; }
   .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.1); color: #fff; }
 
-  .lb-counter {
+  .lb-caption {
+    position: fixed;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.04em;
+    text-align: center;
+    white-space: nowrap;
+  }
     position: fixed;
     bottom: 1.5rem;
     left: 50%;
@@ -808,6 +819,7 @@
   </div>
   <button class="lb-next" onclick="lbNav(1)">›</button>
   <div class="lb-counter" id="lb-counter"></div>
+  <div class="lb-caption" id="lb-caption"></div>
 </div>
 
 <!-- ══════════════════════════════════════
@@ -924,6 +936,8 @@ function openLightbox(photos, index) {
 function renderLb() {
   document.getElementById('lb-img').src = lbPhotos[lbIndex].src;
   document.getElementById('lb-counter').textContent = `${lbIndex + 1} / ${lbPhotos.length}`;
+  const cap = lbPhotos[lbIndex].caption || '';
+  document.getElementById('lb-caption').textContent = cap;
 }
 
 function lbNav(dir) {
